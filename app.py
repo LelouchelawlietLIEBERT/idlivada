@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from typing import Dict
 from sklearn.metrics import auc
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder='template')
 
 @dataclass
 class Cell:
